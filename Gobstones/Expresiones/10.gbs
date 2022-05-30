@@ -1,0 +1,20 @@
+/*
+Definí el procedimiento Flecha(direccion) que dibuje una flecha roja 
+en la dirección correspondiente. El cabezal empieza y debe quedar 
+siempre en el centro, como se ve en los tableros de ejemplo.
+*/
+
+procedure Flecha(direccion){
+  Mover(direccion)
+  Poner(Rojo)
+  Mover(opuesto(direccion))
+  
+  Mover(siguiente(direccion))
+  Poner(Rojo)
+  Mover(previo(direccion))
+  
+  Mover(opuesto(siguiente(direccion)))
+  Poner(Rojo)
+  Mover(siguiente(direccion))
+  
+}

@@ -1,0 +1,14 @@
+/*
+Definí SacarTodas(color), que recibe un color y saca todas las bolitas 
+que hay de ese color (no debe hacer nada con el resto de los colores).
+*/
+
+procedure SacarN(cantidad, color) {
+  repeat(cantidad) {
+    Sacar(color)
+  }
+}
+
+procedure SacarTodas(color){
+  SacarN(nroBolitas(color),color)
+}

@@ -1,0 +1,20 @@
+procedure PonerN(cantidad,color){
+  repeat(cantidad){
+    Poner(color)
+  }
+}
+
+procedure MoverN(cantidad,direccion){
+  repeat(cantidad){
+    Mover(direccion)
+  }
+}
+
+procedure LineaEstePesada(peso, color, longitud){
+  repeat(longitud){
+    PonerN(peso,color)
+    MoverN(1,Este)
+  }
+  
+  MoverN(longitud,Oeste)  
+}

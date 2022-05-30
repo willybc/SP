@@ -1,0 +1,18 @@
+procedure DibujarCuadradoColorido(){
+  DibujarLineaColorida()
+
+  Mover(Norte)
+  DibujarLineaColorida()
+  
+  Mover(Norte)
+  DibujarLineaColorida()
+  
+  Mover(Norte)
+  DibujarLineaColorida()
+  
+  IrAlBorde(Sur)
+}
+
+program{
+  DibujarCuadradoColorido()
+}

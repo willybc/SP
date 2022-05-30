@@ -1,0 +1,13 @@
+/* 
+Triada(Rojo, Azul, Verde) nos da como tablero resultante
+*/ 
+
+procedure Triada(a, b, c){
+  Poner(a)
+  
+  Mover(Este)
+  Poner(b)
+  
+  Mover(Este)
+  Poner(c)
+}

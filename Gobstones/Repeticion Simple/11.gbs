@@ -1,0 +1,11 @@
+procedure CuadradoNegro4(){
+  LineaNegra4Este()
+  
+  repeat(3){
+    Mover(Norte)
+    repeat(3){
+      Mover(Oeste)
+    }
+  LineaNegra4Este()
+  }
+}

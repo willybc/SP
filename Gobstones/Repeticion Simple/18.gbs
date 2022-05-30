@@ -1,0 +1,45 @@
+/*
+Definí un procedimiento GuardaEnL() que haga una guarda en L 
+como muestra la figura, pero dejando el cabezal en la posición inicial.
+*/
+
+procedure PonerAzulejo(){
+    Poner(Verde)
+    PonerN(5,Negro)
+    PonerN(9,Rojo)
+}
+
+procedure PonerN(cantidad,color){
+  repeat(cantidad){
+    Poner(color)
+  }
+}
+
+procedure MoverN(cantidad,direccion){
+  repeat(cantidad){
+    Mover(direccion)
+  }
+}
+
+procedure Parte1L(){
+  repeat(2){
+    PonerAzulejo()
+    MoverN(1,Norte)
+  }
+  PonerAzulejo()
+  MoverN(2,Sur)
+}
+
+procedure Parte2L(){
+  
+  repeat(2){
+    MoverN(1,Este)
+    PonerAzulejo()
+  }
+  MoverN(2,Oeste)
+}
+
+procedure GuardaEnL(){
+  Parte1L()
+  Parte2L()  
+}

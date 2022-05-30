@@ -1,0 +1,43 @@
+/*
+Usando estoyEnUnBorde y estoyRodeadoDe, defini hayLimite
+*/
+
+procedure PonerN(n, color) {
+  repeat(n) {
+    Poner(color)
+  }
+}
+
+procedure SacarN(n, color) {
+  repeat(n) {
+    Sacar(color)
+  }
+}
+
+procedure MoverN(n, dir) {
+  repeat(n) {
+    Mover(dir)
+  }
+}
+function hayBolitasAl(direccion, color) {
+  /*
+ ... 
+*/ 
+}
+
+function estoyRodeadoDe(color) {
+  /*
+ ... 
+*/ 
+}
+
+function estoyEnUnBorde() {
+  /*
+ ... 
+*/ 
+}
+
+function hayLimite() {
+  
+  return ( estoyEnUnBorde() || estoyRodeadoDe(Rojo))
+}
